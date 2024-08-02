@@ -70,14 +70,14 @@ bool Log::init(const char* file_name, int close_log, int log_buf_size, int split
         */
         snprintf(log_full_name, 255, "%d_%02d_%02d_%s", my_tm.tm_year+1900, my_tm.tm_mon+1, my_tm.tm_mday, file_name);
         // 以下这行代码是我个人添加的一行代码
-        strcpy(log_name, file_name);
+        // strcpy(log_name, file_name);
     }
     else
     {
         // file_name包含路径和文件名，需要将其分开才能为日志文件重命名
         strcpy(log_name, p+1);  // 存储文件名
         strncpy(dir_name, file_name, p-file_name+1); // 存储目录名
-        snprintf(log_full_name, 255, "%s%d_%02d_%02d_%s", dir_name, my_tm.tm_year+1900, my_tm.tm_mon+1, my_tm.tm_mday, file_name);
+        snprintf(log_full_name, 255, "%s%d_%02d_%02d_%s", dir_name, my_tm.tm_year+1900, my_tm.tm_mon+1, my_tm.tm_mday, log_name);
     }
 
     m_today = my_tm.tm_mday;
@@ -186,4 +186,12 @@ void Log::write_log(int level, const char* format, ...)
 
     // 关闭可变参数索引
     va_end(valst);
+}
+
+void Log::flush(void)
+{
+    m_mutex.lock();
+    //强制刷新写入流缓冲区
+    fflush(m_fp);
+    m_mutex.unlock();
 }

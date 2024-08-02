@@ -78,7 +78,7 @@ public:
         if(m_size == 0)
         {
             m_mutex.unlock();
-            return ture;
+            return true;
         }
         m_mutex.unlock();
         return false;
@@ -140,7 +140,7 @@ public:
     */
     bool push(T& item)
     {
-        m_mutex.lock()
+        m_mutex.lock();
         // 队列已满，无法添加，需要先等待写线程消费任务
         if(m_size >= m_max_size)
         {
@@ -153,7 +153,7 @@ public:
         m_array[m_back] = item;
         m_size++;
 
-        m_cond.broadcast()
+        m_cond.broadcast();
         m_mutex.unlock();
         return true;
     }
@@ -178,7 +178,7 @@ public:
         m_front = (m_front + 1) % m_max_size;
         item = m_array[m_front];
         m_size--;
-        m_mutex.unlock()
+        m_mutex.unlock();
         return true;
     }
 

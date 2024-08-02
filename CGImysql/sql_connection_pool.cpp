@@ -31,7 +31,7 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
     m_Port = Port;
     m_close_log = close_log;
 
-    for(int i = 0; i < MaxConn; i++)
+    for(int i = 0; i < MaxConn; ++i)
     {
         // 创建一个mysql连接对象指针并初始化
         MYSQL* con = NULL;
@@ -45,8 +45,8 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
         // 使用mysql对象连接到数据库中
         con = mysql_real_connect(con, url.c_str(), User.c_str(), PassWord.c_str(), DBName.c_str(), Port, NULL, 0);
         if(con == nullptr)
-        {
-            LOG_ERROR("Mysql Error : mysql_real_connect");
+        {    
+            LOG_ERROR("Mysql Error : mysql_real_connect"); 
             exit(1);
         }
 

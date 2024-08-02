@@ -1,0 +1,787 @@
+2024-08-03 07:06:23.237529 [info]timer tick
+2024-08-03 07:06:28.237833 [info]timer tick
+2024-08-03 07:06:33.238533 [info]timer tick
+2024-08-03 07:06:34.417095 [info]发现新连接
+2024-08-03 07:06:34.417231 [info]新连接init TRIGMode = 0
+2024-08-03 07:06:34.417276 [info]deal with the client(192.168.207.1)
+2024-08-03 07:06:34.417329 [info]adjust timer once
+2024-08-03 07:06:34.417486 [info]GET / HTTP/1.1
+2024-08-03 07:06:34.417521 [info]host: 192.168.207.130:9006
+2024-08-03 07:06:34.417532 [info]accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:06:34.417540 [info]Unknow header: accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:06:34.417548 [info]upgrade-insecure-requests: 1
+2024-08-03 07:06:34.417556 [info]Unknow header: upgrade-insecure-requests: 1
+2024-08-03 07:06:34.417564 [info]user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:06:34.417572 [info]Unknow header: user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:06:34.417580 [info]accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:06:34.417588 [info]Unknow header: accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:06:34.417596 [info]accept-encoding: gzip, deflate
+2024-08-03 07:06:34.417604 [info]Unknow header: accept-encoding: gzip, deflate
+2024-08-03 07:06:34.417612 [info]
+2024-08-03 07:06:34.417643 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:06:34.417652 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:06:34.417660 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+2024-08-03 07:06:34.417668 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+
+2024-08-03 07:06:34.417676 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+The requested file was not found on this server.
+
+2024-08-03 07:06:38.239078 [info]timer tick
+2024-08-03 07:06:43.239634 [info]timer tick
+2024-08-03 07:06:48.240386 [info]timer tick
+2024-08-03 07:06:53.241450 [info]timer tick
+2024-08-03 07:06:58.241963 [info]timer tick
+2024-08-03 07:07:00.569624 [info]发现新连接
+2024-08-03 07:07:00.569731 [info]新连接init TRIGMode = 0
+2024-08-03 07:07:00.570017 [info]deal with the client(192.168.207.1)
+2024-08-03 07:07:00.570080 [info]adjust timer once
+2024-08-03 07:07:00.570307 [info]GET / HTTP/1.1
+2024-08-03 07:07:00.570342 [info]host: 192.168.207.130:9006
+2024-08-03 07:07:00.570355 [info]accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:07:00.570366 [info]Unknow header: accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:07:00.570379 [info]cache-control: max-age=0
+2024-08-03 07:07:00.570393 [info]Unknow header: cache-control: max-age=0
+2024-08-03 07:07:00.570402 [info]upgrade-insecure-requests: 1
+2024-08-03 07:07:00.570411 [info]Unknow header: upgrade-insecure-requests: 1
+2024-08-03 07:07:00.570419 [info]user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:07:00.570428 [info]Unknow header: user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:07:00.570437 [info]accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:07:00.570446 [info]Unknow header: accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:07:00.570454 [info]accept-encoding: gzip, deflate
+2024-08-03 07:07:00.570463 [info]Unknow header: accept-encoding: gzip, deflate
+2024-08-03 07:07:00.570543 [info]
+2024-08-03 07:07:00.570572 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:07:00.570585 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:07:00.570596 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+2024-08-03 07:07:00.570609 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+
+2024-08-03 07:07:00.570621 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+The requested file was not found on this server.
+
+2024-08-03 07:07:03.242363 [info]timer tick
+2024-08-03 07:07:08.242770 [info]timer tick
+2024-08-03 07:07:13.243064 [info]timer tick
+2024-08-03 07:07:18.244154 [info]timer tick
+2024-08-03 07:07:22.575583 [info]发现新连接
+2024-08-03 07:07:22.575722 [info]新连接init TRIGMode = 0
+2024-08-03 07:07:22.576184 [info]deal with the client(192.168.207.1)
+2024-08-03 07:07:22.576235 [info]adjust timer once
+2024-08-03 07:07:22.576336 [info]GET / HTTP/1.1
+2024-08-03 07:07:22.576361 [info]host: 192.168.207.130:9006
+2024-08-03 07:07:22.576372 [info]accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:07:22.576380 [info]Unknow header: accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:07:22.576388 [info]upgrade-insecure-requests: 1
+2024-08-03 07:07:22.576396 [info]Unknow header: upgrade-insecure-requests: 1
+2024-08-03 07:07:22.576404 [info]user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:07:22.576412 [info]Unknow header: user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:07:22.576419 [info]accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:07:22.576427 [info]Unknow header: accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:07:22.576435 [info]accept-encoding: gzip, deflate
+2024-08-03 07:07:22.576442 [info]Unknow header: accept-encoding: gzip, deflate
+2024-08-03 07:07:22.576450 [info]
+2024-08-03 07:07:22.576461 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:07:22.576470 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:07:22.576478 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+2024-08-03 07:07:22.576485 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+
+2024-08-03 07:07:22.576493 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:close
+
+The requested file was not found on this server.
+
+2024-08-03 07:07:23.244781 [info]timer tick
+2024-08-03 07:07:28.245091 [info]timer tick
+2024-08-03 07:07:47.635706 [info]timer tick
+2024-08-03 07:07:48.536696 [info]发现新连接
+2024-08-03 07:07:48.536860 [info]新连接init TRIGMode = 0
+2024-08-03 07:07:48.536926 [info]发现新连接
+2024-08-03 07:07:48.536979 [info]新连接init TRIGMode = 0
+2024-08-03 07:07:48.545433 [info]deal with the client(192.168.207.1)
+2024-08-03 07:07:48.545758 [info]adjust timer once
+2024-08-03 07:07:48.545973 [info]GET / HTTP/1.1
+2024-08-03 07:07:48.546058 [info]Host: 192.168.207.130:9006
+2024-08-03 07:07:48.546110 [info]Connection: keep-alive
+2024-08-03 07:07:48.546126 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:07:48.546137 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:07:48.546166 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:07:48.546203 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:07:48.546247 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:07:48.546390 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:07:48.546440 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:07:48.546455 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:07:48.546465 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:07:48.546494 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:07:48.546534 [info]
+2024-08-03 07:07:48.546570 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:07:48.546585 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:07:48.546595 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+2024-08-03 07:07:48.546605 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+
+2024-08-03 07:07:48.546614 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+The requested file was not found on this server.
+
+2024-08-03 07:07:52.636569 [info]timer tick
+2024-08-03 07:07:57.637225 [info]timer tick
+2024-08-03 07:08:02.637738 [info]timer tick
+2024-08-03 07:08:07.638775 [info]timer tick
+2024-08-03 07:08:07.639225 [info]deal with the client(192.168.207.1)
+2024-08-03 07:08:07.639285 [info]adjust timer once
+2024-08-03 07:08:07.639439 [info]GET / HTTP/1.1
+2024-08-03 07:08:07.639528 [info]Host: 192.168.207.130:9006
+2024-08-03 07:08:07.639558 [info]Connection: keep-alive
+2024-08-03 07:08:07.639583 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:08:07.639599 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:08:07.639613 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:08:07.639624 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:08:07.639636 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:08:07.639647 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:08:07.639660 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:08:07.639671 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:08:07.639682 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:08:07.639694 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:08:07.639706 [info]
+2024-08-03 07:08:07.639723 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:08:07.639736 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:08:07.639749 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+2024-08-03 07:08:07.639762 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+
+2024-08-03 07:08:07.639774 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+The requested file was not found on this server.
+
+2024-08-03 07:08:12.639162 [info]timer tick
+2024-08-03 07:08:17.639740 [info]timer tick
+2024-08-03 07:08:22.640099 [info]timer tick
+2024-08-03 07:08:27.640537 [info]timer tick
+2024-08-03 07:08:29.659857 [info]发现新连接
+2024-08-03 07:08:29.659983 [info]新连接init TRIGMode = 0
+2024-08-03 07:08:32.640962 [info]timer tick
+2024-08-03 07:08:37.641507 [info]timer tick
+2024-08-03 07:08:42.642314 [info]timer tick
+2024-08-03 07:08:47.642983 [info]timer tick
+2024-08-03 07:08:50.837919 [info]发现新连接
+2024-08-03 07:08:50.838081 [info]新连接init TRIGMode = 0
+2024-08-03 07:08:50.838351 [info]发现新连接
+2024-08-03 07:08:50.838376 [info]新连接init TRIGMode = 0
+2024-08-03 07:08:50.839213 [info]deal with the client(192.168.207.1)
+2024-08-03 07:08:50.839263 [info]adjust timer once
+2024-08-03 07:08:50.839388 [info]GET / HTTP/1.1
+2024-08-03 07:08:50.839448 [info]Host: 192.168.207.130:9006
+2024-08-03 07:08:50.839469 [info]Connection: keep-alive
+2024-08-03 07:08:50.839487 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:08:50.839501 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:08:50.839517 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:08:50.839526 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:08:50.839535 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:08:50.839542 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:08:50.839550 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:08:50.839558 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:08:50.839566 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:08:50.839574 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:08:50.839582 [info]
+2024-08-03 07:08:50.839593 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:08:50.839602 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:08:50.839610 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+2024-08-03 07:08:50.839618 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+
+2024-08-03 07:08:50.839626 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+The requested file was not found on this server.
+
+2024-08-03 07:08:52.643543 [info]timer tick
+2024-08-03 07:08:57.644081 [info]timer tick
+2024-08-03 07:09:02.644447 [info]timer tick
+2024-08-03 07:09:07.645518 [info]timer tick
+2024-08-03 07:09:07.646973 [info]deal with the client(192.168.207.1)
+2024-08-03 07:09:07.647042 [info]adjust timer once
+2024-08-03 07:09:07.647191 [info]GET / HTTP/1.1
+2024-08-03 07:09:07.647219 [info]Host: 192.168.207.130:9006
+2024-08-03 07:09:07.647257 [info]Connection: keep-alive
+2024-08-03 07:09:07.647276 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:09:07.647285 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:09:07.647294 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:09:07.647303 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:09:07.647312 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:09:07.647320 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:09:07.647329 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:09:07.647337 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:09:07.647346 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:09:07.647354 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:09:07.647363 [info]
+2024-08-03 07:09:07.647376 [info]request: HTTP/1.1 404 Not Found
+
+2024-08-03 07:09:07.647385 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+
+2024-08-03 07:09:07.647394 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+2024-08-03 07:09:07.647403 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+
+2024-08-03 07:09:07.647424 [info]request: HTTP/1.1 404 Not Found
+Content-Length:49
+Connection:keep-alive
+
+The requested file was not found on this server.
+
+2024-08-03 07:09:12.646211 [info]timer tick
+2024-08-03 07:09:17.647049 [info]timer tick
+2024-08-03 07:09:22.647546 [info]timer tick
+2024-08-03 07:09:27.648028 [info]timer tick
+2024-08-03 07:09:32.648394 [info]timer tick
+2024-08-03 07:09:37.648864 [info]timer tick
+2024-08-03 07:15:24.798519 [info]timer tick
+2024-08-03 07:15:28.752856 [info]发现新连接
+2024-08-03 07:15:28.752980 [info]新连接init TRIGMode = 0
+2024-08-03 07:15:28.753008 [info]发现新连接
+2024-08-03 07:15:28.753023 [info]新连接init TRIGMode = 0
+2024-08-03 07:15:28.753592 [info]deal with the client(192.168.207.1)
+2024-08-03 07:15:28.753656 [info]adjust timer once
+2024-08-03 07:15:28.753831 [info]GET / HTTP/1.1
+2024-08-03 07:15:28.753892 [info]Host: 192.168.207.130:9006
+2024-08-03 07:15:28.753910 [info]Connection: keep-alive
+2024-08-03 07:15:28.753918 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:15:28.753924 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:15:28.753930 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:15:28.753937 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:15:28.753943 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:15:28.753949 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:15:28.753955 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:15:28.753961 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:15:28.753967 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:15:28.753973 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:15:28.753979 [info]
+2024-08-03 07:15:28.754012 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:15:28.754040 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:15:28.754055 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:15:28.754061 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:15:29.798913 [info]timer tick
+2024-08-03 07:15:34.799582 [info]timer tick
+2024-08-03 07:15:39.800311 [info]timer tick
+2024-08-03 07:15:44.800954 [info]timer tick
+2024-08-03 07:15:44.802106 [info]deal with the client(192.168.207.1)
+2024-08-03 07:15:44.802188 [info]adjust timer once
+2024-08-03 07:15:44.802388 [info]GET / HTTP/1.1
+2024-08-03 07:15:44.802416 [info]Host: 192.168.207.130:9006
+2024-08-03 07:15:44.802428 [info]Connection: keep-alive
+2024-08-03 07:15:44.802437 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:15:44.802446 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:15:44.802455 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:15:44.802464 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:15:44.802472 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:15:44.802481 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:15:44.802490 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:15:44.802498 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:15:44.802518 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:15:44.802527 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:15:44.802535 [info]
+2024-08-03 07:15:44.802566 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:15:44.802575 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:15:44.802584 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:15:44.802593 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:15:49.801631 [info]timer tick
+2024-08-03 07:15:54.801946 [info]timer tick
+2024-08-03 07:15:58.799218 [info]发现新连接
+2024-08-03 07:15:58.799317 [info]新连接init TRIGMode = 0
+2024-08-03 07:15:58.799341 [info]发现新连接
+2024-08-03 07:15:58.799355 [info]新连接init TRIGMode = 0
+2024-08-03 07:15:58.799932 [info]deal with the client(192.168.207.1)
+2024-08-03 07:15:58.799983 [info]adjust timer once
+2024-08-03 07:15:58.800078 [info]GET / HTTP/1.1
+2024-08-03 07:15:58.800125 [info]Host: 192.168.207.130:9006
+2024-08-03 07:15:58.800141 [info]Connection: keep-alive
+2024-08-03 07:15:58.800149 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:15:58.800155 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:15:58.800162 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:15:58.800168 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:15:58.800174 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:15:58.800180 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:15:58.800186 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:15:58.800193 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:15:58.800199 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:15:58.800205 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:15:58.800211 [info]
+2024-08-03 07:15:58.800235 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:15:58.800242 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:15:58.800249 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:15:58.800255 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:15:59.802588 [info]timer tick
+2024-08-03 07:16:04.803117 [info]timer tick
+2024-08-03 07:16:09.803783 [info]timer tick
+2024-08-03 07:16:14.804815 [info]timer tick
+2024-08-03 07:16:14.805717 [info]deal with the client(192.168.207.1)
+2024-08-03 07:16:14.805821 [info]adjust timer once
+2024-08-03 07:16:14.806033 [info]GET / HTTP/1.1
+2024-08-03 07:16:14.806071 [info]Host: 192.168.207.130:9006
+2024-08-03 07:16:14.806100 [info]Connection: keep-alive
+2024-08-03 07:16:14.806121 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:16:14.806132 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:16:14.806141 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:16:14.806151 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:16:14.806159 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:16:14.806168 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:16:14.806189 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:16:14.806198 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:16:14.806206 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:16:14.806215 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:16:14.806223 [info]
+2024-08-03 07:16:14.806256 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:16:14.806265 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:16:14.806274 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:16:14.806283 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:16:19.805389 [info]timer tick
+2024-08-03 07:16:24.805993 [info]timer tick
+2024-08-03 07:16:29.806633 [info]timer tick
+2024-08-03 07:16:34.807517 [info]timer tick
+2024-08-03 07:16:39.808120 [info]timer tick
+2024-08-03 07:16:43.665908 [info]发现新连接
+2024-08-03 07:16:43.666065 [info]新连接init TRIGMode = 0
+2024-08-03 07:16:43.666095 [info]发现新连接
+2024-08-03 07:16:43.666141 [info]新连接init TRIGMode = 0
+2024-08-03 07:16:43.666207 [info]deal with the client(192.168.207.1)
+2024-08-03 07:16:43.666246 [info]adjust timer once
+2024-08-03 07:16:43.666429 [info]GET / HTTP/1.1
+2024-08-03 07:16:43.666484 [info]Host: 192.168.207.130:9006
+2024-08-03 07:16:43.666505 [info]Connection: keep-alive
+2024-08-03 07:16:43.666516 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:16:43.666526 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:16:43.666535 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+2024-08-03 07:16:43.666545 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+2024-08-03 07:16:43.666554 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:16:43.666564 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:16:43.666574 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:16:43.666583 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:16:43.666592 [info]Accept-Language: zh-CN,zh;q=0.9
+2024-08-03 07:16:43.666603 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9
+2024-08-03 07:16:43.666613 [info]
+2024-08-03 07:16:43.666646 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:16:43.666657 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:16:43.666666 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:16:43.666674 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:16:44.808547 [info]timer tick
+2024-08-03 07:16:49.809153 [info]timer tick
+2024-08-03 07:16:54.809519 [info]timer tick
+2024-08-03 07:16:59.810433 [info]timer tick
+2024-08-03 07:16:59.811478 [info]deal with the client(192.168.207.1)
+2024-08-03 07:16:59.811702 [info]GET / HTTP/1.1
+2024-08-03 07:16:59.811737 [info]Host: 192.168.207.130:9006
+2024-08-03 07:16:59.811764 [info]Connection: keep-alive
+2024-08-03 07:16:59.811788 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:16:59.811812 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:16:59.811835 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+2024-08-03 07:16:59.811858 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+2024-08-03 07:16:59.811877 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:16:59.811889 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:16:59.811915 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:16:59.811927 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:16:59.811939 [info]Accept-Language: zh-CN,zh;q=0.9
+2024-08-03 07:16:59.811950 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9
+2024-08-03 07:16:59.811962 [info]
+2024-08-03 07:16:59.812037 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:16:59.812272 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:16:59.812305 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:16:59.812330 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:16:59.812351 [info]adjust timer once
+2024-08-03 07:17:04.811229 [info]timer tick
+2024-08-03 07:17:09.811586 [info]timer tick
+2024-08-03 07:17:14.812074 [info]timer tick
+2024-08-03 07:17:19.812543 [info]timer tick
+2024-08-03 07:17:24.812845 [info]timer tick
+2024-08-03 07:17:29.813186 [info]timer tick
+2024-08-03 07:17:34.813494 [info]timer tick
+2024-08-03 07:17:39.814206 [info]timer tick
+2024-08-03 07:17:44.814685 [info]timer tick
+2024-08-03 07:17:49.815328 [info]timer tick
+2024-08-03 07:17:54.816047 [info]timer tick
+2024-08-03 07:17:59.816746 [info]timer tick
+2024-08-03 07:18:04.817149 [info]timer tick
+2024-08-03 07:18:09.817537 [info]timer tick
+2024-08-03 07:18:14.818202 [info]timer tick
+2024-08-03 07:18:19.818743 [info]timer tick
+2024-08-03 07:18:24.819268 [info]timer tick
+2024-08-03 07:19:42.833382 [info]timer tick
+2024-08-03 07:19:47.833741 [info]timer tick
+2024-08-03 07:19:52.834154 [info]timer tick
+2024-08-03 07:19:57.516289 [info]发现新连接
+2024-08-03 07:19:57.516442 [info]新连接init TRIGMode = 0
+2024-08-03 07:19:57.516475 [info]发现新连接
+2024-08-03 07:19:57.516493 [info]新连接init TRIGMode = 0
+2024-08-03 07:19:57.519974 [info]deal with the client(192.168.207.1)
+2024-08-03 07:19:57.520206 [info]adjust timer once
+2024-08-03 07:19:57.520298 [info]GET / HTTP/1.1
+2024-08-03 07:19:57.520327 [info]Host: 192.168.207.130:9006
+2024-08-03 07:19:57.520340 [info]Connection: keep-alive
+2024-08-03 07:19:57.520351 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:19:57.520361 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:19:57.520371 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:19:57.520381 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:19:57.520391 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:19:57.520401 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:19:57.520411 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:19:57.520421 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:19:57.520431 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:19:57.520440 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:19:57.520450 [info]
+2024-08-03 07:19:57.520483 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:19:57.520493 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:19:57.520503 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:19:57.520513 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:19:57.834798 [info]timer tick
+2024-08-03 07:20:02.835519 [info]timer tick
+2024-08-03 07:20:07.836158 [info]timer tick
+2024-08-03 07:20:12.837614 [info]timer tick
+2024-08-03 07:20:12.837740 [info]deal with the client(192.168.207.1)
+2024-08-03 07:20:12.837821 [info]adjust timer once
+2024-08-03 07:20:12.837932 [info]GET / HTTP/1.1
+2024-08-03 07:20:12.837964 [info]Host: 192.168.207.130:9006
+2024-08-03 07:20:12.837981 [info]Connection: keep-alive
+2024-08-03 07:20:12.837995 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:20:12.838009 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:20:12.838024 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:20:12.838038 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:20:12.838052 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:20:12.838066 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:20:12.838080 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:20:12.838094 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:20:12.838108 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:20:12.838122 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:20:12.838136 [info]
+2024-08-03 07:20:12.838176 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:20:12.838191 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:20:12.838205 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:20:12.838220 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:20:17.837914 [info]timer tick
+2024-08-03 07:20:22.838345 [info]timer tick
+2024-08-03 07:20:27.839067 [info]timer tick
+2024-08-03 07:20:32.839427 [info]timer tick
+2024-08-03 07:20:37.840201 [info]timer tick
+2024-08-03 07:20:42.840408 [info]timer tick
+2024-08-03 07:20:47.840582 [info]timer tick
+2024-08-03 07:20:52.841008 [info]timer tick
+2024-08-03 07:20:57.841461 [info]timer tick
+2024-08-03 07:21:02.841991 [info]timer tick
+2024-08-03 07:21:07.842565 [info]timer tick
+2024-08-03 07:21:12.842826 [info]timer tick
+2024-08-03 07:21:16.127000 [info]发现新连接
+2024-08-03 07:21:16.127125 [info]新连接init TRIGMode = 0
+2024-08-03 07:21:16.127152 [info]发现新连接
+2024-08-03 07:21:16.127165 [info]新连接init TRIGMode = 0
+2024-08-03 07:21:16.127405 [info]deal with the client(192.168.207.1)
+2024-08-03 07:21:16.127461 [info]adjust timer once
+2024-08-03 07:21:16.127572 [info]GET / HTTP/1.1
+2024-08-03 07:21:16.127633 [info]Host: 192.168.207.130:9006
+2024-08-03 07:21:16.127658 [info]Connection: keep-alive
+2024-08-03 07:21:16.127679 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:21:16.127699 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:21:16.127713 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:21:16.127724 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:21:16.127734 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:21:16.127745 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:21:16.127755 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:21:16.127765 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:21:16.127775 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:21:16.127785 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:21:16.127795 [info]
+2024-08-03 07:21:16.127841 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:21:16.127852 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:21:16.127862 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:21:16.127873 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:21:17.843366 [info]timer tick
+2024-08-03 07:21:47.390064 [info]timer tick
+2024-08-03 07:21:52.390591 [info]timer tick
+2024-08-03 07:21:57.391062 [info]timer tick
+2024-08-03 07:22:02.391515 [info]timer tick
+2024-08-03 07:22:07.392425 [info]timer tick
+2024-08-03 07:22:12.393112 [info]timer tick
+2024-08-03 07:24:00.428755 [info]timer tick
+2024-08-03 07:24:05.429680 [info]timer tick
+2024-08-03 07:24:10.430968 [info]timer tick
+2024-08-03 07:24:35.669975 [info]timer tick
+2024-08-03 07:24:40.670609 [info]timer tick
+2024-08-03 07:24:43.018693 [info]发现新连接
+2024-08-03 07:24:43.018830 [info]新连接init TRIGMode = 0
+2024-08-03 07:24:43.018866 [info]发现新连接
+2024-08-03 07:24:43.018885 [info]新连接init TRIGMode = 0
+2024-08-03 07:24:43.019287 [info]deal with the client(192.168.207.1)
+2024-08-03 07:24:43.019348 [info]adjust timer once
+2024-08-03 07:24:43.019476 [info]GET / HTTP/1.1
+2024-08-03 07:24:43.019496 [info]Host: 192.168.207.130:9006
+2024-08-03 07:24:43.019507 [info]Connection: keep-alive
+2024-08-03 07:24:43.019517 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:24:43.019527 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:24:43.019537 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:24:43.019546 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:24:43.019556 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:24:43.019565 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:24:43.019575 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:24:43.019584 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:24:43.019594 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:24:43.019603 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:24:43.019613 [info]
+2024-08-03 07:24:43.019641 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:24:43.019651 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:24:43.019661 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:24:43.019671 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:24:45.671105 [info]timer tick
+2024-08-03 07:24:50.671441 [info]timer tick
+2024-08-03 07:24:55.671877 [info]timer tick
+2024-08-03 07:25:00.672817 [info]timer tick
+2024-08-03 07:25:00.673649 [info]deal with the client(192.168.207.1)
+2024-08-03 07:25:00.673700 [info]adjust timer once
+2024-08-03 07:25:00.674039 [info]GET / HTTP/1.1
+2024-08-03 07:25:00.674082 [info]Host: 192.168.207.130:9006
+2024-08-03 07:25:00.674116 [info]Connection: keep-alive
+2024-08-03 07:25:00.674139 [info]Upgrade-Insecure-Requests: 1
+2024-08-03 07:25:00.674152 [info]Unknow header: Upgrade-Insecure-Requests: 1
+2024-08-03 07:25:00.674163 [info]User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:25:00.674174 [info]Unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:25:00.674185 [info]Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:25:00.674210 [info]Unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:25:00.674221 [info]Accept-Encoding: gzip, deflate
+2024-08-03 07:25:00.674232 [info]Unknow header: Accept-Encoding: gzip, deflate
+2024-08-03 07:25:00.674243 [info]Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:25:00.674253 [info]Unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:25:00.674264 [info]
+2024-08-03 07:25:00.674299 [info]request: HTTP/1.1 200 OK
+
+2024-08-03 07:25:00.674310 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:25:00.674321 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-08-03 07:25:00.674332 [info]request: HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-08-03 07:25:05.673142 [info]timer tick
+2024-08-03 07:25:10.674005 [info]timer tick
+2024-08-03 07:25:15.674640 [info]timer tick
+2024-08-03 07:25:20.674849 [info]timer tick
+2024-08-03 07:25:25.675265 [info]timer tick
+2024-08-03 07:25:30.675803 [info]timer tick
+2024-08-03 07:25:35.676270 [info]timer tick
+2024-08-03 07:25:40.676806 [info]timer tick
+2024-08-03 07:25:45.677081 [info]timer tick
+2024-08-03 07:25:50.677346 [info]timer tick
+2024-08-03 07:25:55.677975 [info]timer tick
+2024-08-03 07:26:00.678612 [info]timer tick
+2024-08-03 07:26:05.679221 [info]timer tick
+2024-08-03 07:26:10.679866 [info]timer tick
+2024-08-03 07:26:15.680292 [info]timer tick
+2024-08-03 07:26:20.680622 [info]timer tick
+2024-08-03 07:35:48.430577 [info]发现新连接
+2024-08-03 07:35:48.430767 [error]新连接init TRIGMode = 0
+2024-08-03 07:35:48.454427 [info]deal with the client(192.168.207.1)
+2024-08-03 07:35:48.454634 [info]adjust timer once
+2024-08-03 07:35:48.454757 [info]GET / HTTP/1.1
+2024-08-03 07:35:48.454818 [info]host: 192.168.207.130:9006
+2024-08-03 07:35:48.454835 [info]accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:35:48.454846 [info]oop!unkonw header: accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-08-03 07:35:48.454858 [info]upgrade-insecure-requests: 1
+2024-08-03 07:35:48.454870 [info]oop!unkonw header: upgrade-insecure-requests: 1
+2024-08-03 07:35:48.454883 [info]user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:35:48.454896 [info]oop!unkonw header: user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+2024-08-03 07:35:48.454908 [info]accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:35:48.455062 [info]oop!unkonw header: accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-08-03 07:35:48.455085 [info]accept-encoding: gzip, deflate
+2024-08-03 07:35:48.455099 [info]oop!unkonw header: accept-encoding: gzip, deflate
+2024-08-03 07:35:48.455111 [info]
+2024-08-03 07:35:48.455148 [info]request:HTTP/1.1 200 OK
+
+2024-08-03 07:35:48.455162 [info]request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-08-03 07:35:48.455175 [info]request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:close
+
+2024-08-03 07:35:48.455186 [info]request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:close
+
+
+2024-08-03 07:35:48.456187 [info]close fd: 16
+2024-08-03 07:35:49.144914 [info]timer tick
+2024-08-03 07:35:54.145487 [info]timer tick
+2024-08-03 07:35:59.145841 [info]timer tick
+2024-08-03 07:36:04.146223 [info]timer tick
+2024-08-03 07:36:09.146784 [info]timer tick
+2024-08-03 07:36:14.146954 [info]timer tick
+2024-08-03 07:36:19.147254 [info]timer tick
+2024-08-03 07:36:24.147748 [info]timer tick
+2024-08-03 07:36:29.148329 [info]timer tick
