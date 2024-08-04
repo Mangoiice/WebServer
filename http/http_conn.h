@@ -54,12 +54,12 @@ public:
     void process();
     // 读取浏览器发来的全部数据，请求报文之类
     bool read_once();
-    // 编写相应报文
+    // 编写相应相应报文
     bool write();
 
     sockaddr_in* get_address() {return &m_address;}
 
-    // 同步线程初始化数据库读取表
+    // 线程连接到数据库，读取存储着用户数据的表
     void initmysql_result(connection_pool* connPool);
     int timer_flag;
     int improv;
@@ -72,7 +72,7 @@ private:
     bool process_write(HTTP_CODE ret);
     // 主状态机解析请求报文中的请求行
     HTTP_CODE parse_request_line(char* text);
-    // 主状态机解析请求报文中的请求头
+    // 主状态机解析请求报文中的请求头、空行
     HTTP_CODE parse_headers(char* text);
     // 主状态机解析请求报文中的正文
     HTTP_CODE parse_content(char* text);
@@ -80,7 +80,7 @@ private:
     HTTP_CODE do_request();
 
     /*
-    m_start_line是已经解析的字符
+    m_start_line是已经解析的字节数
     get_line用于将指针向后偏移，指向未处理的字符
     */
     char* get_line() {return m_read_buf + m_start_line;}
@@ -113,7 +113,7 @@ private:
 
     char m_read_buf[READ_BUFFER_SIZE];  // 存储读取的请求报文
     long m_read_idx;                    // m_read_buf中数据最后一个字节的下一字节
-    long m_checked_idx;                 // m_read_buf中读取的位置
+    long m_checked_idx;                 // 从状态机读取到m_read_buf中的位置
     int m_start_line;                   // m_read_buf中已经读取的字符个数
 
     char m_write_buf[WRITE_BUFFER_SIZE];    // 存储发送的响应报文数据
@@ -130,7 +130,7 @@ private:
     long m_content_length;
     bool m_linger;
 
-    char* m_file_address;          // 读取服务器上文件存储的地址
+    char* m_file_address;       // 将服务器上的文件映射到共享内存中，该变量存储共享内存地址
     struct stat m_file_stat;    // 储存文件信息的结构体
     struct iovec m_iv[2];       // io向量机制iovec
     int m_iv_count;

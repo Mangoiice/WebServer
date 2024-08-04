@@ -8,26 +8,32 @@
 #include "../lock/locker.h"
 #include "../CGImysql/sql_connection_pool.h"
 
+/*
+线程池
+*/
 template <typename T>
 class threadpool
 {
 public:
     threadpool(int actor_model, connection_pool *connPool, int thread_number = 8, int max_requests =10000);
     ~threadpool();
-    bool append(T* request, int state); // 向请求队列中添加请求
+    // 添加一个GET请求
+    bool append(T* request, int state);
+    // 添加一个POST请求
     bool append_p(T* request);
 
 private:
-    // 工作线程运行的函数，不断的从工作队列中取出任务并执行
+    // 工作线程运行的函数，不断的从请求队列中取出请求并建立连接
     static void* worker(void* args);
+    // 实际上用来建立连接的函数
     void run();
 
     int m_thread_number;        // 线程池中的线程数
     int m_max_requests;         // 请求队列中允许的最大请求数
     pthread_t* m_threads;       // 描述线程池的数组
-    std::list<T*> m_workqueue;  // 工作任务队列
+    std::list<T*> m_workqueue;  // 请求队列
     locker m_queuelocker;
-    sem m_queuestat;            // 标记是否有任务需要处理
+    sem m_queuestat;            // 标记是否有请求需要处理
     connection_pool *m_connPool;
     int m_actor_model; 
 };

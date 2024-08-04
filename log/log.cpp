@@ -70,7 +70,7 @@ bool Log::init(const char* file_name, int close_log, int log_buf_size, int split
         */
         snprintf(log_full_name, 255, "%d_%02d_%02d_%s", my_tm.tm_year+1900, my_tm.tm_mon+1, my_tm.tm_mday, file_name);
         // 以下这行代码是我个人添加的一行代码
-        // strcpy(log_name, file_name);
+        strcpy(log_name, file_name);
     }
     else
     {

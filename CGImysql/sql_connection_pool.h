@@ -12,6 +12,7 @@
 #include "../log/log.h"
 using namespace std;
 
+// 数据库连接池
 class connection_pool
 {
 public:
@@ -31,9 +32,9 @@ public:
 
     string m_url;           // 主机地址
     string m_Port;          // 端口号
-    string m_User;          // 数据库用户名
+    string m_User;          // 数据库用户名：root
     string m_PassWord;      // 数据库密码
-    string m_DatabaseName;  // 数据库名称
+    string m_DatabaseName;  // 数据库名称：testDB
     int m_close_log;        // 是否开启日志
 
 private:

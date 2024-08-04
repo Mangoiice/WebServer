@@ -1,3 +1,8 @@
+/*
+声明了sem、locker、cond三个类，用来保证多线程通信中的线程同步
+采用RAII的思想，确保互斥锁和信号量被销毁
+*/
+
 #ifndef LOCKER_H
 #define LOCKER_H
  
@@ -7,11 +12,10 @@
 
 using namespace std;
 
-// 信号类，使用RAII的思想
 class sem
 {
 public:
-    // 无参构造函数，初始化为0的多线程信号量
+    // 初始化值为0的多线程信号量
     sem()
     {
         if(sem_init(&m_sem, 0, 0) != 0)
@@ -20,7 +24,7 @@ public:
         }
     }
 
-    // 有参构造函数，初始化值为val的多线程信号量
+    // 初始化值为val的多线程信号量
     sem(int val)
     {
         if(sem_init(&m_sem, 0, val) != 0)
@@ -51,11 +55,9 @@ private:
     sem_t m_sem;  // 信号量，当信号量为0时会阻塞等待
 };
 
-// 互斥锁类，也是采用RAII的思想
 class locker
 {
 public:
-    // 无参构造函数，用于初始化一个锁
     locker()
     {
         if(pthread_mutex_init(&m_mutex, NULL) != 0)
@@ -64,7 +66,6 @@ public:
         }
     }
 
-    // 析构函数，体现RAII思想
     ~locker()
     {
         pthread_mutex_destroy(&m_mutex);
@@ -92,11 +93,9 @@ private:
     pthread_mutex_t m_mutex;
 };
 
-// 条件变量类
 class cond
 {
 public:
-    // 无参构造函数，用于初始化一个条件变量
     cond()
     {
         if(pthread_cond_init(&m_cond, NULL) != 0)
@@ -105,15 +104,14 @@ public:
         }
     }
 
-    // 析构函数用于销毁一个条件变量，RAII思想
     ~cond()
     {
         pthread_cond_destroy(&m_cond);
     }
 
     /*
-    调用原pthread_cond_wait函数，一直阻塞等待直到主线程通知
-    会先解锁mutex，收到通知后先上锁，再将线程加入工作队列
+    调用pthread_cond_wait函数，一直阻塞等待，直到其他线程调用signal或broadcast函数唤醒
+    会先解锁mutex，收到通知后先上锁获取资源，再将线程加入工作队列
     之所以先上锁再加入工作队列，是防止先加入工作队列后，唤醒条件被其他线程改变
     */
     bool wait(pthread_mutex_t* m_mutex)

@@ -42,7 +42,7 @@ public:
     util_timer():prev(nullptr), next(nullptr){}
 
     time_t expire;  // 该定时器的到期时间，采用绝对时间
-    void (*cb_func)(client_data*);
+    void (*cb_func)(client_data* user_data);    // 函数指针
     client_data* user_data; // 连接资源
 
     // 定时器会被放在一个上升链表中，所以需要定义某一节点的前后节点指针
@@ -56,12 +56,14 @@ class sort_timer_lst
 public:
     sort_timer_lst();
     ~sort_timer_lst();
-    void add_timer(util_timer* timer);  // 添加一个定时器
-    void adjust_timer(util_timer* timer);   // 调整定时器
+    // 添加一个定时器，存在新的定时器需要放在头结点的情况，排除情况后调用私有add_timer函数
+    void add_timer(util_timer* timer);  
+    // 调整定时器，当一个连接发起请求并处理后，重新调整连接在链表中的的位置
+    void adjust_timer(util_timer* timer);
     void del_timer(util_timer* timer);  //删除定时器
     /*
     心搏函数tick
-    主循环定期调用tick，用于将过期的定时器从链表中删除
+    主循环定期调用tick，检查是否有到期的定时器并删除
     */
     void tick();
 

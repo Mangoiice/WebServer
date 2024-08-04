@@ -1,5 +1,5 @@
 #include"lst_timer.h"
-//#include"../http/http_conn.h"
+#include"../http/http_conn.h"
 
 // 上升链表构造函数，初始化头尾节点
 sort_timer_lst::sort_timer_lst()
@@ -23,8 +23,10 @@ sort_timer_lst::~sort_timer_lst()
 void sort_timer_lst::add_timer(util_timer* timer)
 {
     if(!timer) return;
+    // 链表为空
     if(!head) head = tail = timer; return;
 
+    // 需要放在头节点
     if(timer->expire < head->expire)
     {
         timer->next = head;
@@ -40,8 +42,10 @@ void sort_timer_lst::adjust_timer(util_timer* timer)
     if(!timer) return;
 
     util_timer* tmp = timer->next;
+    // timer是尾节点或者timer的到期时间仍然是最后的情况
     if(!tmp || timer->expire < tmp->expire) return;
 
+    // 实现思路是先把timer从链表中取出，再重新添加
     if(timer == head)
     {
         head = head->next;
@@ -129,11 +133,16 @@ void sort_timer_lst::tick()
     time_t cur = time(NULL);
     util_timer* tmp = head;
 
+    // 检查链表中的每一个定时器
     while(tmp)
     {
+        // 因为是上升链表，所以当前的定时器没过期，以后的定时器都不会过期
         if(cur < tmp->expire) break;
+
+        // 执行回调函数，删除连接
         tmp->cb_func(tmp->user_data);
 
+        // 将当前定时器从链表中清除
         head = tmp->next;
         if(head)
         {
@@ -193,16 +202,19 @@ void Utils::addsig(int sig, void(handler)(int), bool restart)
     memset(&sa, '\0', sizeof(sa));
     
     sa.sa_handler = handler;
+    // 设置restart，允许程序阻塞在系统调用的时候被信号打断，处理完信号后重新发起系统调用
     if(restart)
     {
         sa.sa_flags |= SA_RESTART;
     }
+    // 添加所有信号到信号集中
     sigfillset(&sa.sa_mask);
     assert(sigaction(sig, &sa, NULL) != -1);
 }
 
 void Utils::timer_handler()
 {
+    // 执行心搏函数，并且在经过m_TIMESLOT时间后发出SIGALRM信号
     m_timer_list.tick();
     alarm(m_TIMESLOT);
 }
@@ -224,5 +236,5 @@ void cb_func(client_data* user_data)
 
     close(user_data->sockfd);
 
-    
+    http_conn::m_user_count--;
 }

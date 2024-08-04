@@ -21,16 +21,31 @@ public:
         return &instance;
     }
 
+    // 向日志中写入信息
     static void* flush_log_thread(void* args)
     {
         Log::get_instance() -> async_write_log();
     }
 
+    /*
+    初始化日志
+    file_name：日志文件存放的路径以及本身的文件名，如/root/ServerLog.txt
+    close_log：标记是否关闭日志
+    log_buf_size：日志缓冲区的大小
+    split_lines：日志的最大行数
+    max_queue_size：存放日志任务的循环队列的大小，可以用来区分同步/异步写日志
+    */
     bool init(const char* file_name, int close_log, int log_buf_size = 8192,
                 int split_lines = 5000000, int max_queue_size = 0);
 
+    /*
+    分层级生成日志内容，有四个层级debug、info、warn、error
+    可变参数列表传入要写的内容
+    如果选择异步写日志，将生成的内容放入循环队列
+    */
     void write_log(int level, const char* format, ...);
 
+    // 刷新缓冲区
     void flush();
     
 private:
@@ -38,7 +53,7 @@ private:
     Log();
     virtual ~Log();
 
-    // 异步写日志
+    // 从循环队列中取出任务，写入日志内容
     void* async_write_log()
     {
         string single_line;
