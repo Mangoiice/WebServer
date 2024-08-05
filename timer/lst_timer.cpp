@@ -201,14 +201,16 @@ void Utils::addsig(int sig, void(handler)(int), bool restart)
     struct sigaction sa;
     memset(&sa, '\0', sizeof(sa));
     
+    // 设置新的信号处理函数为handler
     sa.sa_handler = handler;
     // 设置restart，允许程序阻塞在系统调用的时候被信号打断，处理完信号后重新发起系统调用
     if(restart)
     {
         sa.sa_flags |= SA_RESTART;
     }
-    // 添加所有信号到信号集中
+    // 添加所有信号到信号集中，在处理某个信号时，阻塞sa_mask中的信号，暂不处理
     sigfillset(&sa.sa_mask);
+    // 设置对sig信号的处理方式
     assert(sigaction(sig, &sa, NULL) != -1);
 }
 

@@ -87,13 +87,14 @@ public:
     int setnonblocking(int fd);
     // 向内核时间表注册读事件，ET模式，选择开启EPOLLONESHOT
     void addfd(int epollfd, int fd, bool one_shot, int TRIGMode);
-    // 信号处理函数：接收到信号后，把信号sig经由管道发送到epollfd所在的线程
+    // 信号处理函数：接收到信号后调用，把信号sig经由管道通知给epoll
     static void sig_handler(int sig);
     // 设置信号处理函数，第二个参数为传函数，接收到信号后会执行handler函数
     void addsig(int sig, void(handler)(int), bool restart = true);
-    // 定时处理任务，重新定时以不触发SIGALRM信号
+    // 调用一次tick函数，并且在m_TIMESLOT时间后触发SIGALRM信号
     void timer_handler();
 
+    // 向客户端发送错误信息，并且关闭connfd
     void show_error(int connfd, const char* info);
 
     static int* u_pipefd;

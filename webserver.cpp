@@ -2,6 +2,7 @@
 
 WebServer::WebServer()
 {
+    // 存放用户连接的数组
     users = new http_conn[MAX_FD];
 
     // 获取当前文件目录
@@ -13,6 +14,7 @@ WebServer::WebServer()
     strcpy(m_root, server_path);
     strcat(m_root, root);
 
+    // 用户连接的定时器，下标与connfd对应
     users_timer = new client_data[MAX_FD];
 }
 
@@ -86,6 +88,7 @@ void WebServer::sql_pool()
 {
     m_connPool = connection_pool::GetInstance();
     m_connPool->init("localhost", m_user, m_passWord, m_databaseName, 3306, m_sql_num, m_close_log);
+    // 这一步是随便用一个http_conn对象去获取存着所有用户的账号和密码，用于校验
     users->initmysql_result(m_connPool);
 }
 
@@ -99,6 +102,7 @@ void WebServer::eventListen()
     m_listenfd = socket(AF_INET, SOCK_STREAM, 0);
     assert(m_listenfd >= 0);
 
+    // 是否开启优雅关闭，就是会不会等待事件处理完毕再关闭socket，而不是立刻关闭
     if(m_OPT_LINGER == 0)
     {
         struct linger tmp = {0, 1};
@@ -111,36 +115,53 @@ void WebServer::eventListen()
     }
 
     int ret = 0;
+    // 标准设置listenfd
     struct sockaddr_in address;
     bzero(&address, sizeof(address));
     address.sin_family = AF_INET;
     address.sin_port = htons(m_port);
     address.sin_addr.s_addr = htonl(INADDR_ANY);
 
+    // 设置端口可复用，防止服务器关闭又开启的时候端口不可用
     int flag = 1;
     setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
+    // bind
     ret = bind(m_listenfd, (struct sockaddr*)&address, sizeof(address));
     assert(ret >= 0);
+    // listen
     ret = listen(m_listenfd, 5);
     assert(ret >= 0);
 
+    // 初始化定时器
     utils.init(TIMESLOT);
 
+    // epoll_create
     m_epollfd = epoll_create(5);
     assert(m_epollfd != -1);
 
+    // 将listenfd加入到epollfd中
     utils.addfd(m_epollfd, m_listenfd, false, m_LISTENTrigmode);
     http_conn::m_epollfd = m_epollfd;
 
+    // 创建命名管道，允许无亲缘关系的进程使用，并将管道的读端加入epollfd，信号到来时可读
     ret = socketpair(PF_UNIX, SOCK_STREAM, 0, m_pipefd);
     assert(ret != -1);
     utils.setnonblocking(m_pipefd[1]);
     utils.addfd(m_epollfd, m_pipefd[0], false, 0);
 
+    /*
+    添加一些对于信号的处理
+    SIGPIPE：忽视
+    SIGALRM、SIGTERM：调用sig_handler函数，把这个信号送入管道写端
+    */ 
     utils.addsig(SIGPIPE, SIG_IGN);
     utils.addsig(SIGALRM, utils.sig_handler, false);
     utils.addsig(SIGTERM, utils.sig_handler, false);
 
+    /*
+    TIMESLOT后发出一个SIGALRM信号，用于启动定时器的检查机制，后续主循环收到信号后会调用tick函数
+    tick函数内又会设置一个alarm
+    */ 
     alarm(TIMESLOT);
 
     Utils::u_pipefd = m_pipefd;
@@ -149,16 +170,24 @@ void WebServer::eventListen()
 
 void WebServer::timer(int connfd, struct sockaddr_in client_address)
 {
+    // 初始化http_conn对象
     users[connfd].init(connfd, client_address, m_root, m_CONNTrigmode, m_close_log, m_user, m_passWord, m_databaseName);
 
+    /*
+    初始化连接的client_data
+    client_data结构体中含有一个定时器，所以也是在初始化定时器
+    */ 
     users_timer[connfd].address = client_address;
     users_timer[connfd].sockfd = connfd;
     util_timer* timer = new util_timer;
     timer->user_data = &users_timer[connfd];
+    // 定时器的回调函数，超时后会运行这个函数
     timer->cb_func = cb_func;
+    // 设置定时器的到期时间，是从当前时间开始3个TIMESLOT
     time_t cur = time(NULL);
     timer->expire = cur + 3 * TIMESLOT;
     users_timer[connfd].timer = timer;
+    // 向定时器上升链表中添加定时器
     utils.m_timer_list.add_timer(timer);
 }
 
@@ -265,21 +294,23 @@ void WebServer::dealwithread(int sockfd)
 {
     util_timer* timer = users_timer[sockfd].timer;
 
-    if(m_actormodel == 1)
+    if(m_actormodel == 1)   // Reactor模式，由工作线程完成读写操作
     {
         if(timer)
         {
             adjust_timer(timer);
         }
-
+        // 向线程池的请求队列中添加Reactor请求
         m_pool->append(users+sockfd, 0);
 
-        while(true)
+        // 一直等待，直到工作线程处理完IO，将improv设置为1
+        while(true) 
         {
             if(users[sockfd].improv == 1)
             {
                 if(users[sockfd].timer_flag == 1)
                 {
+                    // 调用cb_func，关闭客户端的连接，并且从epoll中删除sockfd
                     del_timer(timer, sockfd);
                     users[sockfd].timer_flag = 0;
                 }
@@ -401,6 +432,7 @@ void WebServer::eventLoop()
             }
         }
 
+        // 体现IO事件的高优先度和超时事件的低优先度
         if(timeout)
         {
             utils.timer_handler();

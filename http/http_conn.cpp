@@ -658,15 +658,16 @@ bool http_conn::write()
         // 将响应报文状态行，消息头，空行和响应正文发给浏览器端
         temp = writev(m_sockfd, m_iv, m_iv_count);
 
-        // 未发送
+        // ET模式判断是否发送成功
         if (temp < 0) 
         {
-            // 判断缓冲区是否满了
             if (errno == EAGAIN) 
             {
+                // 发送成功了，重置一下socket
                 modfd(m_epollfd, m_sockfd, EPOLLOUT, m_TRIGMode);
                 return true;
             }
+            // 没发送成功，删除共享内存
             unmap();
             return false;
         }
